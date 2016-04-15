@@ -1,29 +1,32 @@
-﻿Module Module1
+﻿Imports System.Reflection
 
+Module Module1
     Sub Main()
-        Dim result
-        Dim start = Stopwatch.StartNew()
-        result = Problem1.calc1()
-        start.Stop()
-        printTime(start.ElapsedMilliseconds, 1, result)
-        start.Restart()
-        result = Problem2.getFib()
-        start.Stop()
-        printTime(start.ElapsedMilliseconds, 2, result)
-        start.Restart()
-        result = Problem3.calc()
-        start.Stop()
-        printTime(start.ElapsedMilliseconds, 3, result)
-        start.Restart()
-        result = Problem4.Calc()
-        start.Stop()
-        printTime(start.ElapsedMilliseconds, 4, result)
+        Dim calcs As New DoWork
+        calcs.PerformCalcs()
         Console.ReadKey()
     End Sub
-
 
     Function printTime(ByVal time, ByVal probNumber, ByVal ans)
         Console.WriteLine(String.Format("Problem {0} answer is {1} took {2}ms", probNumber, ans, time))
         Return Nothing
     End Function
 End Module
+
+Public Class DoWork
+    Public Function PerformCalcs()
+        Dim method As System.Reflection.MethodInfo
+        Dim funcs = Assembly.GetExecutingAssembly.GetTypes().Where(Function(t) t.Name.Contains("Problem")).ToList()
+        Dim i = 1
+        For Each func In funcs
+            method = Type.GetType(func.FullName).GetMethod("Calc")
+            If method IsNot Nothing Then
+                Dim watch = Stopwatch.StartNew()
+                Dim result = method.Invoke(Me, Nothing)
+                watch.Stop()
+                printTime(watch.ElapsedMilliseconds, i, result)
+                i += 1
+            End If
+        Next
+    End Function
+End Class

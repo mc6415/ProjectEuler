@@ -1,5 +1,5 @@
 ﻿Public Class Problem2
-    Public Shared Function getFib()
+    Public Shared Function Calc()
         Dim a = 1
         Dim b = 2
         Dim c

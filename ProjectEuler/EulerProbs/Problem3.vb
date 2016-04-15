@@ -1,5 +1,5 @@
 ﻿Public Class Problem3
-    Public Shared Function calc()
+    Public Shared Function Calc()
         Dim num As Long = 600851475143
 
         Return EulerMaths.getFactors(num).Where(Function(i) EulerMaths.checkPrime(i)).ToList().Max()

@@ -1,5 +1,5 @@
 ﻿Public Class Problem1
-    Public Shared Function calc1() As Integer
+    Public Shared Function Calc() As Integer
         Dim result = 0
 
         For i = 0 To 999 Step 1

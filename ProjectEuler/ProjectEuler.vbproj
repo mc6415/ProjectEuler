@@ -70,6 +70,7 @@
     <Compile Include="EulerProbs\Problem1.vb" />
     <Compile Include="EulerProbs\Problem3.vb" />
     <Compile Include="EulerProbs\Problem4.vb" />
+    <Compile Include="EulerProbs\Problem5.vb" />
     <Compile Include="MathsFunctions\EulerMaths.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
