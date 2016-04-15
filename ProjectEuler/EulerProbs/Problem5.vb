@@ -1,4 +1,7 @@
-﻿Public Class Problem5
+﻿'2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+'What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+Public Class Problem5
     Public Shared Function Calc()
         ' Most concise way I could think of writing it, probably a faster way somewhere
         For i = 2520 To Integer.MaxValue Step 20

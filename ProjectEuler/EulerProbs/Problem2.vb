@@ -1,4 +1,5 @@
-﻿Public Class Problem2
+﻿'By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+Public Class Problem2
     Public Shared Function Calc()
         Dim a = 1
         Dim b = 2
