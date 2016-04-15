@@ -66,15 +66,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EulerProbs\Problem2.vb" />
-    <Compile Include="EulerProbs\Problem1.vb" />
-    <Compile Include="EulerProbs\Problem3.vb" />
-    <Compile Include="EulerProbs\Problem4.vb" />
-    <Compile Include="EulerProbs\Problem5.vb" />
-    <Compile Include="EulerProbs\Problem6.vb" />
-    <Compile Include="EulerProbs\Problem7.vb" />
-    <Compile Include="EulerProbs\Problem8.vb" />
-    <Compile Include="EulerProbs\Problem9.vb" />
+    <Compile Include="EulerProbs\Problem010.vb" />
+    <Compile Include="EulerProbs\Problem002.vb" />
+    <Compile Include="EulerProbs\Problem001.vb" />
+    <Compile Include="EulerProbs\Problem003.vb" />
+    <Compile Include="EulerProbs\Problem004.vb" />
+    <Compile Include="EulerProbs\Problem005.vb" />
+    <Compile Include="EulerProbs\Problem006.vb" />
+    <Compile Include="EulerProbs\Problem007.vb" />
+    <Compile Include="EulerProbs\Problem008.vb" />
+    <Compile Include="EulerProbs\Problem009.vb" />
     <Compile Include="MathsFunctions\EulerMaths.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

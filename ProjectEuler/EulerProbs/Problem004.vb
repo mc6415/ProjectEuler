@@ -1,5 +1,5 @@
 ﻿' Find the largest palindrome made from the product of two 3-digit numbers.
-Public Class Problem4
+Public Class Problem004
     Public Shared Function Calc()
         Dim palindromes As New List(Of Long)
 

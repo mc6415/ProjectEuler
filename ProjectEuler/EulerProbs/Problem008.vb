@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 ' Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 ' See input/Problem8.txt for the 1000-digit number
-Public Class Problem8
+Public Class Problem008
     Public Shared Function Calc()
         Dim input = File.ReadAllText("./Input/Problem8.txt")
         Dim products = New List(Of Long)

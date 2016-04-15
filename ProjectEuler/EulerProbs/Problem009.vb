@@ -1,6 +1,6 @@
 ﻿'There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 'Find the product abc.
-Public Class Problem9
+Public Class Problem009
     Public Shared Function Calc()
         ' If a is the smallest digit, it must always be under 500
         For a = 1 To 1000 / 2

@@ -1,5 +1,5 @@
 ﻿'What is the 10 001st prime number?
-Public Class Problem7
+Public Class Problem007
     Public Shared Function Calc()
         ' Offset i by 1 as the below will miss out 2 which is Prime
         Dim i = 1

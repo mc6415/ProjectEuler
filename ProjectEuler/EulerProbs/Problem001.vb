@@ -1,5 +1,5 @@
 ﻿'Find the sum of all the multiples of 3 or 5 below 1000.
-Public Class Problem1
+Public Class Problem001
     Public Shared Function Calc() As Integer
         Dim result = 0
 
