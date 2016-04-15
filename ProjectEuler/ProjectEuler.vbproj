@@ -73,6 +73,7 @@
     <Compile Include="EulerProbs\Problem5.vb" />
     <Compile Include="EulerProbs\Problem6.vb" />
     <Compile Include="EulerProbs\Problem7.vb" />
+    <Compile Include="EulerProbs\Problem8.vb" />
     <Compile Include="MathsFunctions\EulerMaths.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -110,6 +111,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\Problem8.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
